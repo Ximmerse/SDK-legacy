@@ -1,4 +1,4 @@
-<div align=right>![](imgs/xim.png)</div>
+<div align=right><img src="imgs/xim.png" ></div>
 
 <center>
 <h1>Tools Instructions</h1>
@@ -24,10 +24,10 @@
 1. Connect Micro port of Power Cable to X-Hawk.
 2. Connect USB port of Power Cable to PC.
 3. Replace X-Hawk's mount by Oculus DK2's (Windows version) and install it to Oculus DK2.
-> Tip:
-> - By now, X-Hawk should be connected with PC (Windows) successfully. During the process, no extra driver is needed, which will be automatically installed by Windows after plugging it to PC.
-> - This can be verified via right click `Computer` $\rightarrow$ `Manage` $\rightarrow$ `Device Manager` $\rightarrow$ `Human Interface Devices`, extra HID-compliant device and USB input device will be added.
-> <div align = center>![](imgs/HID.png)</div>
+	> Tip:
+	> - By now, X-Hawk should be connected with PC (Windows) successfully. During the process, no extra driver is needed, which will be automatically installed by Windows after plugging it to PC.
+	> - This can be verified via right click `Computer` $\rightarrow$ `Manage` $\rightarrow$ `Device Manager` $\rightarrow$ `Human Interface Devices`, extra HID-compliant device and USB input device will be added.
+	> <div align = center>![](imgs/HID.png)</div>
 4. Connect X-Cobra to X-Hawk. This can be done by:
 	1. Turn on X-Cobra by press its power button.
 	2. Put X-Cobra close to X-Hawk. It will be successfully connected once it vibrates.
@@ -62,6 +62,7 @@
 2. *(optional)* Install Bluetooth driver.
 	> Normally, the driver will be installed automatically, which can be verified by checking whether there is a `CSR BlueCore Bluetooth` under `Device Manager` $\rightarrow$ `Universal Serial Bus controllers`.
 	> ![](imgs/BluetoothUSBDriver.png)
+	>
 	> If you can not find it there, you will need to install the driver mannually. Steps are:
 	> 1. Download the driver from [here](https://github.com/Ximmerse/SDK/blob/master/Driver/CSR8510%20Bluetooth%20USB%20Dongle.zip?raw=true) (ZIP file).
 	> 2. Unzip the file to your PC.
