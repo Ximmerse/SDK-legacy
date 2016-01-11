@@ -67,7 +67,8 @@
 	3. Depending on your PC system:
 		- For Win7: `CSR8510 Bluetooth USB Dongle -> Windows 7 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
 		- For Win8 or Win10: `CSR8510 Bluetooth USB Dongle -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
-	![](imgs/InstallBluetoothUSBDriver.png)
+
+			![](imgs/InstallBluetoothUSBDriver.png)
 3. Run IMU calibration tool by following steps:
 	1. Download IMU calibration tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/IMU_cal_tool_V1.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
