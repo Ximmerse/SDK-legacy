@@ -12,7 +12,7 @@
 
 #define MAX_BUTTONS          0x5
 
-typedef struct JOYINFO_TAG
+typedef struct JOY_INFO_TAG
 {
   /** Flags **/
   unsigned char  id;              // 0 for left-hand joystick, 1 for right-hand one
@@ -28,7 +28,7 @@ typedef struct JOYINFO_TAG
   float          position[3];     // 3d position of joystick
   float          rotation[4];     // rotation of joystick
   float          eulerAngles[3];  // euler angles of joystick
-} JOYINFO;
+} JOY_INFO;
 
 typedef void (*void_delegate)();
 
@@ -40,13 +40,13 @@ extern "C" XIM_API int XHawkExit(void);
 // Get the number of joysticks
 extern "C" XIM_API int XHawkGetJoystickCount(void);
 // Get a joystick info from read cache
-extern "C" XIM_API int XHawkGetJoystick(int index, JOYINFO *joystick);
+extern "C" XIM_API int XHawkGetJoystick(int index, JOY_INFO *joystick);
 // Get all joystick infos
-extern "C" XIM_API int XHawkGetAllJoysticks(JOYINFO *joysticks);
+extern "C" XIM_API int XHawkGetAllJoysticks(JOY_INFO *joysticks);
 // Get a newest joystick info from read cache
-extern "C" XIM_API int XHawkGetNewestJoystick(int index, JOYINFO *joystick);
+extern "C" XIM_API int XHawkGetNewestJoystick(int index, JOY_INFO *joystick);
 // Get all newest joystick infos
-extern "C" XIM_API int XHawkGetAllNewestJoysticks(JOYINFO *joysticks);
+extern "C" XIM_API int XHawkGetAllNewestJoysticks(JOY_INFO *joysticks);
 
 /** Write **/
 // send message to joystick, reserved, not implemented yet
