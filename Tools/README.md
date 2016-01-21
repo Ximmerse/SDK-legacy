@@ -3,7 +3,7 @@
 # Tools Instructions
 
 
-## Test Demo
+## Tracking HID Demo
 ### Hardware Requirement
 1. Ximmerse X-Hawk
 	<div align = center>
@@ -29,10 +29,10 @@
 4. Connect X-Cobra to X-Hawk. This can be done by:
 	1. Turn on X-Cobra by press its power button.
 	2. Put X-Cobra close to X-Hawk. It will be successfully connected once it vibrates.
-5. Run test demo by following steps:
-	1. Download test demo from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/Test_demo.zip?raw=true) (ZIP file).
+5. Run tracking HID demo by following steps:
+	1. Download tracking HID demo from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/Tracking_hid.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
-	3. Double click `Test_demo -> Test_demo.exe` to run. You will see the real-time status of X-Cobra (assume two X-Cobras are connected) that are represented by 3D virtual balls in the program window, with FPS information shown in the left bottom.
+	3. Double click `Tracking_hid -> Tracking_hid.exe` to run. You will see the real-time status of X-Cobra (assume two X-Cobras are connected) that are represented by 3D virtual balls in the program window, with FPS information shown in the left bottom.
 		![](imgs/TestDemo.png)
 	4. More information. More information can be obtained, including:
 		- IMU information: click `Toggle IMU Display` button to show detailed IMU information.
