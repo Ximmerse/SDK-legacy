@@ -2,8 +2,10 @@
 
 **Update History**
 - 01/26/2016: Add CrossInputManager and X-Console tools.
-- 01/23/2016: Refine Tracking_hid tools: support Windows 10.
+- 01/23/2016: Refine Tracking_hid tool: support Windows 10.
 - 01/11/2016: Add Tracking_hid and IMU_cal_tool_V1 tools.
+- - -
+
 
 ## Tracking HID Demo
 ### Hardware Requirement
