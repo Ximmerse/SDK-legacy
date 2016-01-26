@@ -21,15 +21,14 @@
 ### Steps
 1. Connect Micro port of Power Cable to X-Hawk.
 2. Connect USB port of Power Cable to PC.
-3. Replace X-Hawk's mount by Oculus DK2's (Windows version) and install it to Oculus DK2.
 	> Tip:
 	> - By now, X-Hawk should be connected with PC (Windows) successfully. During the process, no extra driver is needed, which will be automatically installed by Windows after plugging it to PC.
 	> - This can be verified via right click `Computer -> Manage -> Device Manager -> Human Interface Devices`, extra HID-compliant device and USB input device will be added.
 	> <div align = center>![](imgs/HID.png)</div>
-4. Connect X-Cobra to X-Hawk. This can be done by:
+3. Connect X-Cobra to X-Hawk. This can be done by:
 	1. Turn on X-Cobra by press its power button.
 	2. Put X-Cobra close to X-Hawk. It will be successfully connected once it vibrates.
-5. Run tracking HID demo by following steps:
+4. Run tracking HID demo by following steps:
 	1. Download tracking HID demo from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/Tracking_hid.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `Tracking_hid -> Tracking_hid.exe` to run. You will see the real-time status of X-Cobra (assume two X-Cobras are connected) that are represented by 3D virtual balls in the program window, with FPS information shown in the left bottom.
@@ -41,6 +40,126 @@
 			![](imgs/TestDemo3.png)
 		- Log: click `Toggle Log` button to show detailed log information.
 			![](imgs/TestDemo4.png)
+
+
+* * *
+## CrossInputManager
+This tool enables us to obtain X-Cobra's information (including position, rotation, axis, trigger and buttons, etc.) as well as X-Swift's information (i.e. rotation). It further contains three modes, i.e. `InputTest (X-Hawk)`, `InputTest (X-Cobra)` and `InputTest (X-Swift)`.
+
+### `InputTest (X-Hawk)`
+The hardware requirement and setup steps are the same as the above tracking HID demo except the last step replaced by the following:
+
+- Run CrossInputManager by following steps
+	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/CrossInputManager.zip?raw=true) (ZIP file).
+	2. Unzip the file to your PC.
+	3. Double click `CrossInputManager -> CrossInputManager.exe` to run.
+	4. Click `InputTest (X-Hawk)` button to activate this mode.
+
+Once done, you will be able to obtain the detailed X-Cobra's information (including position, rotation, axis, trigger and buttons, etc.) through X-Hawk.
+
+<div align = center>![](imgs/CrossInputManagerGUI_XHawk.png)</div>
+
+### `InputTest (X-Cobra)`
+This sample demonstrates how to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB dongle plugged in PC.
+
+#### Hardware Requirement
+1. Ximmerse X-Cobra
+	<div align = center>
+	<img src="imgs/Cobra.png" width="700" >
+	</div>
+2. Bluetooth USB Dongle
+ 	<div align = center>
+	<img src="imgs/BluetoothUSBDongle.png" width="100" >
+	</div>
+
+#### Steps
+1. Un-plugin X-Hawk from PC if it is already connected.
+2. Plugin Bluetooth USB Dongle to PC.
+2. *(optional)* Install Bluetooth driver.
+	> Normally, the driver will be installed automatically, which can be verified by checking whether there is a `CSR BlueCore Bluetooth` under `Device Manager -> Universal Serial Bus controllers`.
+	> ![](imgs/BluetoothUSBDriver.png)
+
+	If you can not find it there, you will need to install the driver mannually. Steps are:
+	1. Download the driver from [here](https://github.com/Ximmerse/SDK/blob/master/Driver/CSR8510%20Bluetooth%20USB%20Dongle.zip?raw=true) (ZIP file).
+	2. Unzip the file to your PC.
+	3. Depending on your PC system:
+		- For Win7: `CSR8510 Bluetooth USB Dongle -> Windows 7 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
+		- For Win8 or Win10: `CSR8510 Bluetooth USB Dongle -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
+
+			![](imgs/InstallBluetoothUSBDriver.png)
+3. Connect X-Cobra via X-Console tool. This can be done by:
+	1. Turn on X-Cobra by press its power button.
+	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/X-Console.zip?raw=true) (ZIP file).
+	2. Unzip the file to your PC.
+	3. Double click `X-Console -> X-Console.exe` to run.
+		![](imgs/CrossInputManagerGUI_XCobra2.png)
+	4. Connect left hand X-Cobra by:
+		- Press `X-Device 0` button to scan X-Cobra.
+			![](imgs/CrossInputManagerGUI_XCobra3.png)
+		- After a whiel, press `Stop Scan` button to stop scanning.
+			![](imgs/CrossInputManagerGUI_XCobra4.png)
+		- Select the corresponding X-Cobra via its device BT address (starting with `00:`) in the dropdown list.
+			![](imgs/CrossInputManagerGUI_XCobra5.png)
+		- The corresponding X-Cobra will be successfully connected once it vibrates.
+	5. Connect right hand X-Cobra in the similar way.
+		![](imgs/CrossInputManagerGUI_XCobra6.png)
+4. Run CrossInputManager by following steps
+	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/CrossInputManager.zip?raw=true) (ZIP file).
+	2. Unzip the file to your PC.
+	3. Double click `CrossInputManager -> CrossInputManager.exe` to run.
+	4. Click `InputTest (X-Cobra)` button to activate this mode.
+
+Once done, you will be able to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB dongle plugged in PC.
+
+<div align = center>![](imgs/CrossInputManagerGUI_XCobra.png)</div>
+
+### `InputTest (X-Swift)`
+#### Hardware Requirement
+1. Ximmerse X-Swift
+	<div align = center>
+	<img src="imgs/Swift.png" width="300" >
+	</div>
+2. Bluetooth USB Dongle
+ 	<div align = center>
+	<img src="imgs/BluetoothUSBDongle.png" width="100" >
+	</div>
+
+#### Steps
+1. Plugin Bluetooth USB Dongle to PC.
+2. *(optional)* Install Bluetooth driver.
+	> Normally, the driver will be installed automatically, which can be verified by checking whether there is a `CSR BlueCore Bluetooth` under `Device Manager -> Universal Serial Bus controllers`.
+	> ![](imgs/BluetoothUSBDriver.png)
+
+	If you can not find it there, you will need to install the driver mannually. Steps are:
+	1. Download the driver from [here](https://github.com/Ximmerse/SDK/blob/master/Driver/CSR8510%20Bluetooth%20USB%20Dongle.zip?raw=true) (ZIP file).
+	2. Unzip the file to your PC.
+	3. Depending on your PC system:
+		- For Win7: `CSR8510 Bluetooth USB Dongle -> Windows 7 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
+		- For Win8 or Win10: `CSR8510 Bluetooth USB Dongle -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
+
+			![](imgs/InstallBluetoothUSBDriver.png)
+3. Connect X-Swift via X-Console tool. This can be done by:
+	1. Turn on X-Swift by press its power button.
+	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/X-Console.zip?raw=true) (ZIP file).
+	2. Unzip the file to your PC.
+	3. Double click `X-Console -> X-Console.exe` to run.
+		![](imgs/CrossInputManagerGUI_XCobra2.png)
+	4. Connect X-Swift by:
+		- Press `X-Device 2` button to scan X-Swift.
+			![](imgs/CrossInputManagerGUI_XSwift2.png)
+		- After a whiel, press `Stop Scan` button to stop scanning.
+			![](imgs/CrossInputManagerGUI_XSwift3.png)
+		- Select the X-Swift via its device BT address (starting with `00:`) in the dropdown list.
+			![](imgs/CrossInputManagerGUI_XSwift4.png)
+4. Run CrossInputManager by following steps
+	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/CrossInputManager.zip?raw=true) (ZIP file).
+	2. Unzip the file to your PC.
+	3. Double click `CrossInputManager -> CrossInputManager.exe` to run.
+	4. Click `InputTest (X-Swift)` button to activate this mode.
+
+Once done, you will be able to obtain the detailed X-Swift's information (i.e. rotation) through Bluetooth USB dongle plugged in PC.
+
+<div align = center>![](imgs/CrossInputManagerGUI_XSwift.png)</div>
 
 
 * * *
