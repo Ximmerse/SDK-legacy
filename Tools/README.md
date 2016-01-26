@@ -1,7 +1,9 @@
-<div align=right><img src="imgs/xim.png" ></div>
-
 # Tools Instructions
 
+**Update History**
+- 01/26/2016: Add CrossInputManager and X-Console tools.
+- 01/23/2016: Refine Tracking_hid tools: support Windows 10.
+- 01/11/2016: Add Tracking_hid and IMU_cal_tool_V1 tools.
 
 ## Tracking HID Demo
 ### Hardware Requirement
@@ -57,7 +59,7 @@ The hardware requirement and setup steps are the same as the above tracking HID 
 
 Once done, you will be able to obtain the detailed X-Cobra's information (including position, rotation, axis, trigger and buttons, etc.) through X-Hawk.
 
-<div align = center>![](imgs/CrossInputManagerGUI_XHawk.png)</div>
+![](imgs/CrossInputManagerGUI_XHawk.png)
 
 ### `InputTest (X-Cobra)`
 This sample demonstrates how to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB dongle plugged in PC.
@@ -111,7 +113,7 @@ This sample demonstrates how to obtain the detailed X-Cobra's information (inclu
 
 Once done, you will be able to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB dongle plugged in PC.
 
-<div align = center>![](imgs/CrossInputManagerGUI_XCobra.png)</div>
+![](imgs/CrossInputManagerGUI_XCobra.png)
 
 ### `InputTest (X-Swift)`
 #### Hardware Requirement
@@ -159,7 +161,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 
 Once done, you will be able to obtain the detailed X-Swift's information (i.e. rotation) through Bluetooth USB dongle plugged in PC.
 
-<div align = center>![](imgs/CrossInputManagerGUI_XSwift.png)</div>
+![](imgs/CrossInputManagerGUI_XSwift.png)
 
 
 * * *
