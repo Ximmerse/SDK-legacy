@@ -10,6 +10,7 @@ This folder contains our drivers, currently including
 > ![](../Tools/imgs/BluetoothUSBDriver.png)
 
 If you can not find it there, you will need to install the driver mannually. Steps are:
+
 1. Download the driver from [here](https://github.com/Ximmerse/SDK/blob/master/Driver/CSR8510%20Bluetooth%20USB%20Dongle.zip?raw=true) (ZIP file).
 2. Unzip the file to your PC.
 3. Depending on your PC system:
