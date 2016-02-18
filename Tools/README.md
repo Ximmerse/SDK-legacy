@@ -65,21 +65,21 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 ![](imgs/CrossInputManagerGUI_XHawk.png)
 
 ### `InputTest (X-Cobra)`
-This sample demonstrates how to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB dongle plugged in PC.
+This sample demonstrates how to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB adapter plugged in PC.
 
 #### Hardware Requirement
 1. Ximmerse X-Cobra
 	<div align = center>
 	<img src="imgs/Cobra.png" width="700" >
 	</div>
-2. Bluetooth USB Dongle
+2. Bluetooth USB Adapter
  	<div align = center>
 	<img src="imgs/BluetoothUSBDongle.png" width="100" >
 	</div>
 
 #### Steps
 1. Un-plugin X-Hawk from PC if it is already connected.
-2. Plugin Bluetooth USB Dongle to PC.
+2. Plugin Bluetooth USB Adapter to PC.
 2. *(optional)* Install Bluetooth driver.
 	> Normally, the driver will be installed automatically, which can be verified by checking whether there is a `CSR BlueCore Bluetooth` under `Device Manager -> Universal Serial Bus controllers`.
 	> ![](imgs/BluetoothUSBDriver.png)
@@ -88,8 +88,8 @@ This sample demonstrates how to obtain the detailed X-Cobra's information (inclu
 	1. Download the driver from [here](https://github.com/Ximmerse/SDK/blob/master/Driver/CSR8510%20Bluetooth%20USB%20Dongle.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Depending on your PC system:
-		- For Win7: `CSR8510 Bluetooth USB Dongle -> Windows 7 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
-		- For Win8 or Win10: `CSR8510 Bluetooth USB Dongle -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
+		- For Win7: `CSR8510 Bluetooth USB Adapter -> Windows 7 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
+		- For Win8 or Win10: `CSR8510 Bluetooth USB Adapter -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
 
 			![](imgs/InstallBluetoothUSBDriver.png)
 3. Connect X-Cobra via X-Console tool. This can be done by:
@@ -114,7 +114,7 @@ This sample demonstrates how to obtain the detailed X-Cobra's information (inclu
 	3. Double click `CrossInputManager -> CrossInputManager.exe` to run.
 	4. Click `InputTest (X-Cobra)` button to activate this mode.
 
-Once done, you will be able to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB dongle plugged in PC.
+Once done, you will be able to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB adapter plugged in PC.
 
 ![](imgs/CrossInputManagerGUI_XCobra.png)
 
@@ -124,13 +124,13 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 	<div align = center>
 	<img src="imgs/Swift.png" width="300" >
 	</div>
-2. Bluetooth USB Dongle
+2. Bluetooth USB Adapter
  	<div align = center>
 	<img src="imgs/BluetoothUSBDongle.png" width="100" >
 	</div>
 
 #### Steps
-1. Plugin Bluetooth USB Dongle to PC.
+1. Plugin Bluetooth USB Adapter to PC.
 2. *(optional)* Install Bluetooth driver.
 	> Normally, the driver will be installed automatically, which can be verified by checking whether there is a `CSR BlueCore Bluetooth` under `Device Manager -> Universal Serial Bus controllers`.
 	> ![](imgs/BluetoothUSBDriver.png)
@@ -139,8 +139,8 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 	1. Download the driver from [here](https://github.com/Ximmerse/SDK/blob/master/Driver/CSR8510%20Bluetooth%20USB%20Dongle.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Depending on your PC system:
-		- For Win7: `CSR8510 Bluetooth USB Dongle -> Windows 7 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
-		- For Win8 or Win10: `CSR8510 Bluetooth USB Dongle -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
+		- For Win7: `CSR8510 Bluetooth USB Adapter -> Windows 7 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
+		- For Win8 or Win10: `CSR8510 Bluetooth USB Adapter -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
 
 			![](imgs/InstallBluetoothUSBDriver.png)
 3. Connect X-Swift via X-Console tool. This can be done by:
@@ -162,7 +162,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 	3. Double click `CrossInputManager -> CrossInputManager.exe` to run.
 	4. Click `InputTest (X-Swift)` button to activate this mode.
 
-Once done, you will be able to obtain the detailed X-Swift's information (i.e. rotation) through Bluetooth USB dongle plugged in PC.
+Once done, you will be able to obtain the detailed X-Swift's information (i.e. rotation) through Bluetooth USB adapter plugged in PC.
 
 ![](imgs/CrossInputManagerGUI_XSwift.png)
 
@@ -174,13 +174,13 @@ Once done, you will be able to obtain the detailed X-Swift's information (i.e. r
 	<div align = center>
 	<img src="http://ximmerse.github.io/SDK_Doc/imgs/Cobra.png" width="700" >
 	</div>
-2. Bluetooth USB Dongle
+2. Bluetooth USB Adapter
  	<div align = center>
 	<img src="imgs/BluetoothUSBDongle.png" width="100" >
 	</div>
 
 ### Steps
-1. Plugin Bluetooth USB Dongle to PC.
+1. Plugin Bluetooth USB Adapter to PC.
 2. *(optional)* Install Bluetooth driver.
 	> Normally, the driver will be installed automatically, which can be verified by checking whether there is a `CSR BlueCore Bluetooth` under `Device Manager -> Universal Serial Bus controllers`.
 	> ![](imgs/BluetoothUSBDriver.png)
@@ -189,8 +189,8 @@ Once done, you will be able to obtain the detailed X-Swift's information (i.e. r
 	1. Download the driver from [here](https://github.com/Ximmerse/SDK/blob/master/Driver/CSR8510%20Bluetooth%20USB%20Dongle.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Depending on your PC system:
-		- For Win7: `CSR8510 Bluetooth USB Dongle -> Windows 7 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
-		- For Win8 or Win10: `CSR8510 Bluetooth USB Dongle -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
+		- For Win7: `CSR8510 Bluetooth USB Adapter -> Windows 7 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
+		- For Win8 or Win10: `CSR8510 Bluetooth USB Adapter -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
 
 			![](imgs/InstallBluetoothUSBDriver.png)
 3. Run IMU calibration tool by following steps:
