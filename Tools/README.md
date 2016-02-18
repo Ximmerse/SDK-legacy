@@ -1,5 +1,13 @@
 # Tools Instructions
 
+**Table of Contents** <br />
+- [1 Tracking HID Demo](#anchor-tracking-hid) <br />
+- [2 CrossInputManager](#anchor-crossinputmanager) <br />
+	- [2.1 InputTest (X-Hawk)](#anchor-inputtest-hawk) <br />
+	- [2.2 InputTest (X-Cobra)](#anchor-inputtest-cobra) <br />
+	- [2.3 InputTest (X-Swift)](#anchor-inputtest-swift) <br />
+- [3 IMU Calibration](#anchor-imu-cal) <br />
+
 **Update History**
 - 01/26/2016: Add CrossInputManager and X-Console tools.
 - 01/23/2016: Refine Tracking_hid tool: support Windows 10.
@@ -7,8 +15,7 @@
 
 - - -
 
-
-## Tracking HID Demo
+## <a name="anchor-tracking-hid"></a> Tracking HID Demo
 ### Hardware Requirement
 1. Ximmerse X-Hawk
 	<div align = center>
@@ -48,10 +55,10 @@
 
 
 * * *
-## CrossInputManager
+## <a name="anchor-crossinputmanager"></a> CrossInputManager
 This tool enables us to obtain X-Cobra's information (including position, rotation, axis, trigger and buttons, etc.) as well as X-Swift's information (i.e. rotation). It further contains three modes, i.e. `InputTest (X-Hawk)`, `InputTest (X-Cobra)` and `InputTest (X-Swift)`.
 
-### `InputTest (X-Hawk)`
+### <a name="anchor-inputtest-hawk"></a> `InputTest (X-Hawk)`
 The hardware requirement and setup steps are the same as the above tracking HID demo except the last step replaced by the following:
 
 - Run CrossInputManager by following steps
@@ -64,7 +71,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 
 ![](imgs/CrossInputManagerGUI_XHawk.png)
 
-### `InputTest (X-Cobra)`
+### <a name="anchor-inputtest-cobra"></a> `InputTest (X-Cobra)`
 This sample demonstrates how to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB adapter plugged in PC.
 
 #### Hardware Requirement
@@ -118,7 +125,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 
 ![](imgs/CrossInputManagerGUI_XCobra.png)
 
-### `InputTest (X-Swift)`
+### <a name="anchor-inputtest-swift"></a> `InputTest (X-Swift)`
 #### Hardware Requirement
 1. Ximmerse X-Swift
 	<div align = center>
@@ -168,7 +175,7 @@ Once done, you will be able to obtain the detailed X-Swift's information (i.e. r
 
 
 * * *
-## IMU Calibration
+## <a name="anchor-imu-cal"></a> IMU Calibration
 ### Hardware Requirement
 1. Ximmerse X-Cobra
 	<div align = center>
