@@ -1,7 +1,7 @@
 Ximmerse APKs
 =============
 
-This folder contains several APKs working together with Ximmerse devices that can run on Android mobiles.
+This folder contains several APKs working together with Ximmerse devices.
 
 **Table of Contents**
 - [BluetoothSetting.apk](#anchor-BluetoothSetting)
@@ -14,6 +14,7 @@ This APK allows Android mobiles to connect X-Cobra and X-Swift via Bluetooth, si
 
 ## <a name="anchor-CrossInputManager"></a> CrossInputManager.apk
 Similar to [CrossInputManager](https://github.com/Ximmerse/SDK/tree/master/Tools) tool on PC, this APK enables
+
 1. obtaining X-Cobra's information (including position, rotation, axis, trigger and buttons, etc.) via X-Hawk;
 2. obtaining X-Cobra's information (including position, rotation, axis, trigger and buttons, etc.) via Bluetooth;
 3. obtaining X-Swift's information (i.e. rotation) via Bluetooth.
