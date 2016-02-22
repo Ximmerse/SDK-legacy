@@ -2,20 +2,18 @@
 
 **Table of Contents** <br />
 - [1 Tracking HID Demo](#anchor-tracking-hid) <br />
-- [2 CrossInputManager](#anchor-crossinputmanager) <br />
+- [2 CrossInputManager Demo](#anchor-crossinputmanager) <br />
 	- [2.1 InputTest (X-Hawk)](#anchor-inputtest-hawk) <br />
-	- [2.2 InputTest (X-Cobra)](#anchor-inputtest-cobra) <br />
-	- [2.3 InputTest (X-Swift)](#anchor-inputtest-swift) <br />
-- [3 IMU Calibration](#anchor-imu-cal) <br />
+	- [2.2 InputTest (X-Hawk SDK)](#anchor-inputtest-hawk-sdk) <br />
+	- [2.3 InputTest (X-Cobra)](#anchor-inputtest-cobra) <br />
+	- [2.4 InputTest (X-Swift)](#anchor-inputtest-swift) <br />
+- [3 X-Console Tool](#anchor-console) <br />
+- [4 IMU Calibration Tool](#anchor-imu-cal) <br />
 
-**Update History**
-- 01/26/2016: Add CrossInputManager and X-Console tools.
-- 01/23/2016: Refine Tracking_hid tool: support Windows 10.
-- 01/11/2016: Add Tracking_hid and IMU_cal_tool_V1 tools.
 
-- - -
+* * *
 
-## <a name="anchor-tracking-hid"></a> Tracking HID Demo
+## <a name="anchor-tracking-hid"></a> 1 Tracking HID Demo
 ### Hardware Requirement
 1. Ximmerse X-Hawk
 	<div align = center>
@@ -55,10 +53,10 @@
 
 
 * * *
-## <a name="anchor-crossinputmanager"></a> CrossInputManager
+## <a name="anchor-crossinputmanager"></a> 2 CrossInputManager Demo
 This tool enables us to obtain X-Cobra's information (including position, rotation, axis, trigger and buttons, etc.) as well as X-Swift's information (i.e. rotation). It further contains three modes, i.e. `InputTest (X-Hawk)`, `InputTest (X-Cobra)` and `InputTest (X-Swift)`.
 
-### <a name="anchor-inputtest-hawk"></a> `InputTest (X-Hawk)`
+### <a name="anchor-inputtest-hawk"></a> 2.1 `InputTest (X-Hawk)`
 The hardware requirement and setup steps are the same as the above tracking HID demo except the last step replaced by the following:
 
 - Run CrossInputManager by following steps
@@ -71,7 +69,16 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 
 ![](imgs/CrossInputManagerGUI_XHawk.png)
 
-### <a name="anchor-inputtest-cobra"></a> `InputTest (X-Cobra)`
+### <a name="anchor-inputtest-hawk-sdk"></a> 2.2 `InputTest (X-Hawk SDK)`
+The hardware requirement and setup steps are the same as the above [InputTest (X-Hawk) demo](#anchor-inputtest-hawk) except the very last step replaced by the following:
+
+- Click `InputTest (X-Hawk)` button to activate this mode.
+
+Once done, you will be able to obtain the detailed X-Cobra's information (including position, rotation, axis, trigger and buttons, etc.) through X-Hawk in plain text format.
+
+![](imgs/CrossInputManagerGUI_XHawkSDK.png)
+
+### <a name="anchor-inputtest-cobra"></a> 2.3 `InputTest (X-Cobra)`
 This sample demonstrates how to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB adapter plugged in PC.
 
 #### Hardware Requirement
@@ -99,7 +106,7 @@ This sample demonstrates how to obtain the detailed X-Cobra's information (inclu
 		- For Win8 or Win10: `CSR8510 Bluetooth USB Adapter -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
 
 			![](imgs/InstallBluetoothUSBDriver.png)
-3. Connect X-Cobra via X-Console tool. This can be done by:
+3. <a name="anchor-console-cobra"></a> Connect X-Cobra via X-Console tool. This can be done by:
 	1. Turn on X-Cobra by press its power button.
 	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/X-Console.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
@@ -125,7 +132,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 
 ![](imgs/CrossInputManagerGUI_XCobra.png)
 
-### <a name="anchor-inputtest-swift"></a> `InputTest (X-Swift)`
+### <a name="anchor-inputtest-swift"></a> 2.4 `InputTest (X-Swift)`
 #### Hardware Requirement
 1. Ximmerse X-Swift
 	<div align = center>
@@ -150,7 +157,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 		- For Win8 or Win10: `CSR8510 Bluetooth USB Adapter -> Windows 8 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
 
 			![](imgs/InstallBluetoothUSBDriver.png)
-3. Connect X-Swift via X-Console tool. This can be done by:
+3. <a name="anchor-console-swift"></a> Connect X-Swift via X-Console tool. This can be done by:
 	1. Turn on X-Swift by press its power button.
 	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/X-Console.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
@@ -175,7 +182,24 @@ Once done, you will be able to obtain the detailed X-Swift's information (i.e. r
 
 
 * * *
-## <a name="anchor-imu-cal"></a> IMU Calibration
+## <a name="anchor-console"></a> 3 X-Console Tool
+This tool has three main functionalities:
+
+1. Check whether X-Hawk has been sucessfully connected to PC.
+
+	This can be done by clicking the `Check` button. If connected sucessfully, message `"X-Hawk is found"` will be displayed in the status bar, otherwise message `"X-Hawk is not found"` will be displayed.
+	![](imgs/XConsole.png)
+
+2. Scan and connect X-Cobra to PC via Bluetooth.
+
+	Please refer to [here](#anchor-console-cobra) for details.
+
+3. Scan and connect X-Swift to PC via Bluetooth.
+
+	Please refer to [here](#anchor-console-swift) for details.
+
+* * *
+## <a name="anchor-imu-cal"></a> 4 IMU Calibration Tool
 ### Hardware Requirement
 1. Ximmerse X-Cobra
 	<div align = center>
