@@ -115,7 +115,7 @@ This sample demonstrates how to obtain the detailed X-Cobra's information (inclu
 	4. Connect left hand X-Cobra by:
 		- Press `X-Device 0` button to scan X-Cobra.
 			![](imgs/CrossInputManagerGUI_XCobra3.png)
-		- After a whiel, press `Stop Scan` button to stop scanning.
+		- After a while, press `Stop Scan` button to stop scanning.
 			![](imgs/CrossInputManagerGUI_XCobra4.png)
 		- Select the corresponding X-Cobra via its device BT address (starting with `00:`) in the dropdown list.
 			![](imgs/CrossInputManagerGUI_XCobra5.png)
@@ -166,7 +166,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 	4. Connect X-Swift by:
 		- Press `X-Device 2` button to scan X-Swift.
 			![](imgs/CrossInputManagerGUI_XSwift2.png)
-		- After a whiel, press `Stop Scan` button to stop scanning.
+		- After a while, press `Stop Scan` button to stop scanning.
 			![](imgs/CrossInputManagerGUI_XSwift3.png)
 		- Select the X-Swift via its device BT address (starting with `00:`) in the dropdown list.
 			![](imgs/CrossInputManagerGUI_XSwift4.png)
