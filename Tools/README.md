@@ -150,7 +150,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 	> ![](imgs/BluetoothUSBDriver.png)
 
 	If you can not find it there, you will need to install the driver mannually. Steps are:
-	1. Download the driver from [here](https://github.com/Ximmerse/SDK/blob/master/Driver/CSR8510%20Bluetooth%20USB%20Dongle.zip?raw=true) (ZIP file).
+	1. Download the driver from [here](https://github.com/Ximmerse/SDK/raw/master/Driver/CSR8510%20Bluetooth%20USB%20Adapter.zip) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Depending on your PC system:
 		- For Win7: `CSR8510 Bluetooth USB Adapter -> Windows 7 -> win32/64 -> CSRBlueCoreUSB.inf ->` right click `-> Install`.
