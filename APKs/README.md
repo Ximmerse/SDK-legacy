@@ -10,7 +10,7 @@ This folder contains several APKs that can run on most Android devices working t
 - [ToyBrickCardboard.apk](#anchor-ToyBrickCardboard)
 
 ## <a name="anchor-BluetoothSetting"></a> BluetoothSetting.apk
-This APK allows Android mobiles to connect X-Cobra and X-Swift via Bluetooth, similar to [X-Console](https://github.com/Ximmerse/SDK/tree/master/Tools) tool on PC.
+This APK allows Android mobiles to connect X-Cobra and X-Swift via Bluetooth, similar to [X-Console](https://github.com/Ximmerse/SDK/tree/master/Tools) tool on PC. Please refer to [SDK Doc](http://ximmerse.github.io/SDK_Doc/#9.4-connect-ximmerse-devices-via-bluetooth-in-android) for step-by-step instructions.
 
 ## <a name="anchor-CrossInputManager"></a> CrossInputManager.apk
 Similar to [CrossInputManager](https://github.com/Ximmerse/SDK/tree/master/Tools) tool on PC, this APK enables
