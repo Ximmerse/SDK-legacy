@@ -1,19 +1,28 @@
 # Tools Instructions
 
 **Table of Contents** <br />
-- [1 Tracking HID Demo](#anchor-tracking-hid) <br />
-- [2 CrossInputManager Demo](#anchor-crossinputmanager) <br />
-	- [2.1 InputTest (X-Hawk)](#anchor-inputtest-hawk) <br />
-	- [2.2 InputTest (X-Hawk SDK)](#anchor-inputtest-hawk-sdk) <br />
-	- [2.3 InputTest (X-Cobra)](#anchor-inputtest-cobra) <br />
-	- [2.4 InputTest (X-Swift)](#anchor-inputtest-swift) <br />
-- [3 X-Console Tool](#anchor-console) <br />
-- [4 IMU Calibration Tool](#anchor-imu-cal) <br />
-
+- ***PC Tools***
+	- [1 Tracking HID Tool](#anchor-tracking-hid) - <kbd>PC $\rightarrow$ Tracking_hid.zip</kbd> <br />
+	- [2 CrossInputManager Tool](#anchor-crossinputmanager) - <kbd>PC $\rightarrow$ CrossInputManager.zip</kbd> <br />
+		- [2.1 InputTest (X-Hawk)](#anchor-inputtest-hawk) <br />
+		- [2.2 InputTest (X-Hawk SDK)](#anchor-inputtest-hawk-sdk) <br />
+		- [2.3 InputTest (X-Cobra)](#anchor-inputtest-cobra) <br />
+		- [2.4 InputTest (X-Swift)](#anchor-inputtest-swift) <br />
+	- [3 X-Console Tool](#anchor-console) - <kbd>PC $\rightarrow$ X-Console.zip</kbd> <br />
+	- [4 IMU Calibration Tool](#anchor-imu-cal) - <kbd>PC $\rightarrow$ IMU_cal_tool_V1.zip</kbd> <br />
+- ***Mobile Tools***
+	- [5 Bluetooth Connect Tool](#anchor-BluetoothSetting) - <kbd>Mobile $\rightarrow$ BTconnect.apk</kbd> <br />
+	- [6 CrossInputManager Tool](#anchor-CrossInputManager) - <kbd>Mobile $\rightarrow$ CrossInputManager.apk</kbd> <br />
+	- [7 Cardboard Test](#anchor-CardboardTest) - <kbd>Mobile $\rightarrow$ CardboardTest.apk</kbd> <br />
 
 * * *
 
-## <a name="anchor-tracking-hid"></a> 1 Tracking HID Demo
+## <a name="anchor-tracking-hid"></a>1 Tracking HID Tool - <kbd>PC $\rightarrow$ Tracking_hid.zip</kbd>
+This tool enables to obtain detailed info of X-Cobras via X-Hawk. It is also helpful to validate
+
+1. whether X-Hawk is sucessfully connected to PC.
+2. whether X-Cobra is sucessfully connected to X-Hawk.
+
 ### Hardware Requirement
 1. Ximmerse X-Hawk
 	<div align = center>
@@ -29,6 +38,8 @@
 	</div>
 
 ### Steps
+> Tip: You can refer to our [Open Box Tutorial Video](https://youtu.be/VZ33MuYHGzU?t=3s) (0:00 $\rightarrow$ 1:16) for demonstration.
+
 1. Connect Micro port of Power Cable to X-Hawk.
 2. Connect USB port of Power Cable to PC.
 	> Tip:
@@ -53,10 +64,16 @@
 
 
 * * *
-## <a name="anchor-crossinputmanager"></a> 2 CrossInputManager Demo
-This tool enables us to obtain X-Cobra's information (including position, rotation, axis, trigger and buttons, etc.) as well as X-Swift's information (i.e. rotation). It further contains three modes, i.e. `InputTest (X-Hawk)`, `InputTest (X-Cobra)` and `InputTest (X-Swift)`.
+## <a name="anchor-crossinputmanager"></a>2 CrossInputManager Tool - <kbd>PC $\rightarrow$ CrossInputManager.zip</kbd>
+This tool enables to obtain detailed info of 1) X-Cobras via X-Hawk, 2) X-Cobras via Bluetooth and 3) X-Swift via Bluetooth. It is also helpful to validate
 
-### <a name="anchor-inputtest-hawk"></a> 2.1 `InputTest (X-Hawk)`
+1. For X-Cobras via X-Hawk (in ++InputTest (X-Hawk)++ and ++InputTest (X-Hawk SDK)++ modes):
+	- whether X-Hawk is sucessfully connected to PC.
+	- whether X-Cobra is sucessfully connected to X-Hawk.
+2. For X-Cobras via Bluetooth (in ++InputTest (X-Cobra)++ mode): whether X-Cobra is sucessfully connected to PC via Bluetooth.
+3. For X-Swift via Bluetooth (in ++InputTest (X-Cobra)++ mode): whether X-Swift is sucessfully connected to PC via Bluetooth.
+
+### <a name="anchor-inputtest-hawk"></a>2.1 `InputTest (X-Hawk)`
 The hardware requirement and setup steps are the same as the above tracking HID demo except the last step replaced by the following:
 
 - Run CrossInputManager by following steps
@@ -69,7 +86,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 
 ![](imgs/CrossInputManagerGUI_XHawk.png)
 
-### <a name="anchor-inputtest-hawk-sdk"></a> 2.2 `InputTest (X-Hawk SDK)`
+### <a name="anchor-inputtest-hawk-sdk"></a>2.2 `InputTest (X-Hawk SDK)`
 The hardware requirement and setup steps are the same as the above [InputTest (X-Hawk) demo](#anchor-inputtest-hawk) except the very last step replaced by the following:
 
 - Click `InputTest (X-Hawk)` button to activate this mode.
@@ -78,7 +95,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 
 ![](imgs/CrossInputManagerGUI_XHawkSDK.png)
 
-### <a name="anchor-inputtest-cobra"></a> 2.3 `InputTest (X-Cobra)`
+### <a name="anchor-inputtest-cobra"></a>2.3 `InputTest (X-Cobra)`
 This sample demonstrates how to obtain the detailed X-Cobra's information (including rotation, axis, trigger and buttons, etc.) through Bluetooth USB adapter plugged in PC.
 
 #### Hardware Requirement
@@ -108,7 +125,7 @@ This sample demonstrates how to obtain the detailed X-Cobra's information (inclu
 			![](imgs/InstallBluetoothUSBDriver.png)
 3. <a name="anchor-console-cobra"></a> Connect X-Cobra via X-Console tool. This can be done by:
 	1. Turn on X-Cobra by press its power button.
-	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/X-Console.zip?raw=true) (ZIP file).
+	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/PC/X-Console.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `X-Console -> X-Console.exe` to run.
 		![](imgs/CrossInputManagerGUI_XCobra2.png)
@@ -123,7 +140,7 @@ This sample demonstrates how to obtain the detailed X-Cobra's information (inclu
 	5. Connect right hand X-Cobra in the similar way.
 		![](imgs/CrossInputManagerGUI_XCobra6.png)
 4. Run CrossInputManager by following steps
-	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/CrossInputManager.zip?raw=true) (ZIP file).
+	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/PC/CrossInputManager.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `CrossInputManager -> CrossInputManager.exe` to run.
 	4. Click `InputTest (X-Cobra)` button to activate this mode.
@@ -132,7 +149,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 
 ![](imgs/CrossInputManagerGUI_XCobra.png)
 
-### <a name="anchor-inputtest-swift"></a> 2.4 `InputTest (X-Swift)`
+### <a name="anchor-inputtest-swift"></a>2.4 `InputTest (X-Swift)`
 #### Hardware Requirement
 1. Ximmerse X-Swift
 	<div align = center>
@@ -159,7 +176,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 			![](imgs/InstallBluetoothUSBDriver.png)
 3. <a name="anchor-console-swift"></a> Connect X-Swift via X-Console tool. This can be done by:
 	1. Turn on X-Swift by press its power button.
-	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/X-Console.zip?raw=true) (ZIP file).
+	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/PC/X-Console.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `X-Console -> X-Console.exe` to run.
 		![](imgs/CrossInputManagerGUI_XCobra2.png)
@@ -171,7 +188,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 		- Select the X-Swift via its device BT address (starting with `00:`) in the dropdown list.
 			![](imgs/CrossInputManagerGUI_XSwift4.png)
 4. Run CrossInputManager by following steps
-	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/CrossInputManager.zip?raw=true) (ZIP file).
+	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/PC/CrossInputManager.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `CrossInputManager -> CrossInputManager.exe` to run.
 	4. Click `InputTest (X-Swift)` button to activate this mode.
@@ -180,9 +197,8 @@ Once done, you will be able to obtain the detailed X-Swift's information (i.e. r
 
 ![](imgs/CrossInputManagerGUI_XSwift.png)
 
-
 * * *
-## <a name="anchor-console"></a> 3 X-Console Tool
+## <a name="anchor-console"></a>3 X-Console Tool - <kbd>PC $\rightarrow$ X-Console.zip</kbd>
 This tool has three main functionalities:
 
 1. Check whether X-Hawk has been sucessfully connected to PC.
@@ -199,7 +215,13 @@ This tool has three main functionalities:
 	Please refer to [here](#anchor-console-swift) for details.
 
 * * *
-## <a name="anchor-imu-cal"></a> 4 IMU Calibration Tool
+## <a name="anchor-imu-cal"></a>4 IMU Calibration Tool - <kbd>PC $\rightarrow$ IMU_cal_tool_V1.zip</kbd>
+This tool is useful for
+
+1. calibrating IMU of X-Cobra.
+2. validating wether axis, trigger and buttons, etc of X-Cobra is working.
+3. calibrating IMU of X-Swift.
+
 ### Hardware Requirement
 1. Ximmerse X-Cobra
 	<div align = center>
@@ -225,7 +247,7 @@ This tool has three main functionalities:
 
 			![](imgs/InstallBluetoothUSBDriver.png)
 3. Run IMU calibration tool by following steps:
-	1. Download IMU calibration tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/IMU_cal_tool_V1.zip?raw=true) (ZIP file).
+	1. Download IMU calibration tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/PC/IMU_cal_tool_V1.zip?raw=true) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `IMU_cal_tool_V1 -> IMU_Cal_Tool_V1.exe` to run. You will see the calibration program like this:
 		![](imgs/IMUCalibrationWindow.png)
@@ -254,3 +276,22 @@ This tool has three main functionalities:
 	2. Click the `Validation` menu in the calibration program to make the validation window active.
 	3. Press `Stationary Validation` button in the validation window to start.
 		![](imgs/IMUCalibrationWindow6.png)
+
+## <a name="anchor-BluetoothSetting"></a>5 Bluetooth Connect Tool - <kbd>Mobile $\rightarrow$ BTconnect.apk</kbd>
+Use this tool to connect the X-Cobra and X-Swift to your Android device via Bluetooth. This tool is used if you want to connect the X-Cobra and X-Swift to your mobile device ++WITHOUT using the X-Hawk++. Once connected and saved (refer to [SDK Doc](http://ximmerse.github.io/SDK_Doc/#9.4-connect-ximmerse-devices-via-bluetooth-in-android) for step-by-step instructions), you can test the connected devices using the CrossInputManager tool below.
+
+<div align = center>![](imgs/BluetoothSetting.png)</div>
+
+## <a name="anchor-CrossInputManager"></a>6 CrossInputManager Tool - <kbd>Mobile $\rightarrow$ CrossInputManager.apk</kbd>
+Similar to [CrossInputManager](#anchor-crossinputmanager) tool on PC, you can use this tool with OR without the X-Hawk. Essentially, this tool allows you to test if the X-Cobra and X-Swift is functioning properly on your mobile device. The tool provides the following information:
+
+1. X-Cobra's input data ++via X-Hawk connection++.
+2. X-Cobra's input data ++via Bluetooth connection++ to mobile device (without X-Hawk) – see *Bluetooth Setting* above.
+3. X-Swift's input data ++via Bluetooth connection++ to mobile device (without X-Hawk) – see *Bluetooth Setting* above.
+
+<div align = center>![](imgs/CrossInputManager.png)</div>
+
+## <a name="anchor-CardboardTest"></a>7 Cardboard Test - <kbd>Mobile $\rightarrow$ CardboardTest.apk</kbd>
+The Cardboard Test is a basic demo that shows the position and rotation of the X-Cobra when connected to your mobile device ++via the X-Hawk++.
+
+<div align = center>![](imgs/CardboardTest.png)</div>
