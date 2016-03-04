@@ -278,7 +278,9 @@ This tool is useful for
 		![](imgs/IMUCalibrationWindow6.png)
 
 ## <a name="anchor-BluetoothSetting"></a>5 Bluetooth Connect Tool - <kbd>Mobile -> BTconnect.apk</kbd>
-Use this tool to connect the X-Cobra and X-Swift to your Android device via Bluetooth. This tool is used if you want to connect the X-Cobra and X-Swift to your mobile device **WITHOUT using the X-Hawk**. Once connected and saved (refer to [SDK Doc](http://ximmerse.github.io/SDK_Doc/#9.4-connect-ximmerse-devices-via-bluetooth-in-android) for step-by-step instructions), you can test the connected devices using the CrossInputManager tool below.
+Use this tool to connect the X-Cobra and X-Swift to your Android device via Bluetooth. This tool is used if you want to connect the X-Cobra and X-Swift to your mobile device **WITHOUT using the X-Hawk**. Once connected and saved, you can test the connected devices using the CrossInputManager tool below.
+
+You can refer to the [SDK Doc](http://ximmerse.github.io/SDK_Doc/#9.4-connect-ximmerse-devices-via-bluetooth-in-android) or our [Bluetooth Connect Tutorial Video](https://www.youtube.com/watch?v=14m5beCGDyI) for step-by-step instructions
 
 <div align = center>
 <img src="imgs/BluetoothSetting.png" >
