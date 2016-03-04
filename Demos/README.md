@@ -23,9 +23,9 @@ You can refer to our [SDK Doc](http://ximmerse.github.io/SDK_Doc/#7-developing-w
 
 As the Toy Brick demo for Gear VR is not yet available on the Oculus/Samsung store, you will need to provide us with your device-specific OSIG for us to provide you with a unique APK to install on your mobile device.
 
-> ++Important++: This demo works ONLY on the ++Samsung Galaxy S6++ and ++Samsung Gear VR Innovator Edition for S6++.
+> **Important**: This demo works ONLY on the **Samsung Galaxy S6** and **Samsung Gear VR Innovator Edition for S6**.
 
-Contact ++support@ximmerse.com++ with the title *"Gear VR APK Application"* if you wish to apply for a unique Toy Brick demo APK. Note that you will have to turn on *"Developer Mode"* in the Gear VR Service app to get this demo running.
+Contact **support@ximmerse.com** with the title *"Gear VR APK Application"* if you wish to apply for a unique Toy Brick demo APK. Note that you will have to turn on *"Developer Mode"* in the Gear VR Service app to get this demo running.
 
 <div align = center>
 <img src="imgs/ToyBrick.png" >

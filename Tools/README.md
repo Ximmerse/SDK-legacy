@@ -67,11 +67,11 @@ This tool enables to obtain detailed info of X-Cobras via X-Hawk. It is also hel
 ## <a name="anchor-crossinputmanager"></a>2 CrossInputManager Tool - <kbd>PC -> CrossInputManager.zip</kbd>
 This tool enables to obtain detailed info of 1) X-Cobras via X-Hawk, 2) X-Cobras via Bluetooth and 3) X-Swift via Bluetooth. It is also helpful to validate
 
-1. For X-Cobras via X-Hawk (in ++InputTest (X-Hawk)++ and ++InputTest (X-Hawk SDK)++ modes):
+1. For X-Cobras via X-Hawk (in **InputTest (X-Hawk)** and **InputTest (X-Hawk SDK)** modes):
 	- whether X-Hawk is sucessfully connected to PC.
 	- whether X-Cobra is sucessfully connected to X-Hawk.
-2. For X-Cobras via Bluetooth (in ++InputTest (X-Cobra)++ mode): whether X-Cobra is sucessfully connected to PC via Bluetooth.
-3. For X-Swift via Bluetooth (in ++InputTest (X-Cobra)++ mode): whether X-Swift is sucessfully connected to PC via Bluetooth.
+2. For X-Cobras via Bluetooth (in **InputTest (X-Cobra)** mode): whether X-Cobra is sucessfully connected to PC via Bluetooth.
+3. For X-Swift via Bluetooth (in **InputTest (X-Cobra)** mode): whether X-Swift is sucessfully connected to PC via Bluetooth.
 
 ### <a name="anchor-inputtest-hawk"></a>2.1 `InputTest (X-Hawk)`
 The hardware requirement and setup steps are the same as the above tracking HID demo except the last step replaced by the following:
@@ -278,7 +278,7 @@ This tool is useful for
 		![](imgs/IMUCalibrationWindow6.png)
 
 ## <a name="anchor-BluetoothSetting"></a>5 Bluetooth Connect Tool - <kbd>Mobile -> BTconnect.apk</kbd>
-Use this tool to connect the X-Cobra and X-Swift to your Android device via Bluetooth. This tool is used if you want to connect the X-Cobra and X-Swift to your mobile device ++WITHOUT using the X-Hawk++. Once connected and saved (refer to [SDK Doc](http://ximmerse.github.io/SDK_Doc/#9.4-connect-ximmerse-devices-via-bluetooth-in-android) for step-by-step instructions), you can test the connected devices using the CrossInputManager tool below.
+Use this tool to connect the X-Cobra and X-Swift to your Android device via Bluetooth. This tool is used if you want to connect the X-Cobra and X-Swift to your mobile device **WITHOUT using the X-Hawk**. Once connected and saved (refer to [SDK Doc](http://ximmerse.github.io/SDK_Doc/#9.4-connect-ximmerse-devices-via-bluetooth-in-android) for step-by-step instructions), you can test the connected devices using the CrossInputManager tool below.
 
 <div align = center>
 <img src="imgs/BluetoothSetting.png" >
@@ -287,16 +287,16 @@ Use this tool to connect the X-Cobra and X-Swift to your Android device via Blue
 ## <a name="anchor-CrossInputManager"></a>6 CrossInputManager Tool - <kbd>Mobile -> CrossInputManager.apk</kbd>
 Similar to [CrossInputManager](#anchor-crossinputmanager) tool on PC, you can use this tool with OR without the X-Hawk. Essentially, this tool allows you to test if the X-Cobra and X-Swift is functioning properly on your mobile device. The tool provides the following information:
 
-1. X-Cobra's input data ++via X-Hawk connection++.
-2. X-Cobra's input data ++via Bluetooth connection++ to mobile device (without X-Hawk) – see *Bluetooth Setting* above.
-3. X-Swift's input data ++via Bluetooth connection++ to mobile device (without X-Hawk) – see *Bluetooth Setting* above.
+1. X-Cobra's input data **via X-Hawk connection**.
+2. X-Cobra's input data **via Bluetooth connection** to mobile device (without X-Hawk) – see *Bluetooth Setting* above.
+3. X-Swift's input data **via Bluetooth connection** to mobile device (without X-Hawk) – see *Bluetooth Setting* above.
 
 <div align = center>
 <img src="imgs/CrossInputManager.png" >
 </div>
 
 ## <a name="anchor-CardboardTest"></a>7 Cardboard Test - <kbd>Mobile -> CardboardTest.apk</kbd>
-The Cardboard Test is a basic demo that shows the position and rotation of the X-Cobra when connected to your mobile device ++via the X-Hawk++.
+The Cardboard Test is a basic demo that shows the position and rotation of the X-Cobra when connected to your mobile device **via the X-Hawk**.
 
 <div align = center>
 <img src="imgs/CardboardTest.png" >
