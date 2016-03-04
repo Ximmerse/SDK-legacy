@@ -38,7 +38,7 @@ This tool enables to obtain detailed info of X-Cobras via X-Hawk. It is also hel
 	</div>
 
 ### Steps
-> Tip: You can refer to our [Open Box Tutorial Video](https://youtu.be/VZ33MuYHGzU?t=3s) (0:00 -> 1:16) for demonstration.
+> Tip: You can refer to our [Open Box Tutorial Video](https://youtu.be/2wMl7DIoO-8?t=3s) (0:00 -> 1:16) for demonstration.
 
 1. Connect Micro port of Power Cable to X-Hawk.
 2. Connect USB port of Power Cable to PC.
