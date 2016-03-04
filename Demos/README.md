@@ -14,7 +14,9 @@ This demo places a desk of toy bricks in front of you that you can interact with
 
 You can refer to our [Cardboard Tutorial Video](https://www.youtube.com/watch?v=IMGgXu9qwhA) for demonstration.
 
-<div align = center>![](imgs/ToyBrick.png)</div>
+<div align = center>
+<img src="imgs/ToyBrick.png" >
+</div>
 
 ## <a name="anchor-ToyBrickGearVR"></a>Toy Brick (for Gear VR) - <kbd>Toy Brick GearVR.apk</kbd>
 You can refer to our [SDK Doc](http://ximmerse.github.io/SDK_Doc/#7-developing-with-gear-vr) or [Gear VR Tutorial Video](https://www.youtube.com/watch?v=SDIEa9DMquA) for step-by-step instructions.
@@ -25,9 +27,13 @@ As the Toy Brick demo for Gear VR is not yet available on the Oculus/Samsung sto
 
 Contact ++support@ximmerse.com++ with the title *"Gear VR APK Application"* if you wish to apply for a unique Toy Brick demo APK. Note that you will have to turn on *"Developer Mode"* in the Gear VR Service app to get this demo running.
 
-<div align = center>![](imgs/ToyBrick.png)</div>
+<div align = center>
+<img src="imgs/ToyBrick.png" >
+</div>
 
 ## <a name="anchor-ToyBrickOculus"></a>Toy Brick Demo (for Oculus DK2) - <kbd>Toy Brick (DK2).zip</kbd>
 This is the Toy Brick demo that runs on the Oculus DK2.
 
-<div align = center>![](imgs/ToyBrickOculus.png)</div>
+<div align = center>
+<img src="imgs/ToyBrickOculus.png" >
+</div>
