@@ -296,7 +296,7 @@ Similar to [CrossInputManager](#anchor-crossinputmanager) tool on PC, you can us
 </div>
 
 ## <a name="anchor-CardboardTest"></a>7 Cardboard Test - <kbd>Mobile -> CardboardTest.apk</kbd>
-The Cardboard Test is a basic demo that shows the position and rotation of the X-Cobra when connected to your mobile device **via the X-Hawk**.
+The Cardboard Test is a basic demo that shows the position and rotation of the X-Cobra when connected to your mobile device **via the X-Hawk**. You can refer to our [Cardboard Test Tutorial Video](https://www.youtube.com/watch?v=BWye8ZaxMbQ) for demonstration.
 
 <div align = center>
 <img src="imgs/CardboardTest.png" >
