@@ -16,11 +16,14 @@ Changelog
 	- - -
 	*Known issues:*
 	- Due to hardware issues, vibration may be inaccurate.
+
 	* * *
 
 - **v2.0**
 	- Support Google Cardboard.
 	- Support Windows 10.
+
+	* * *
 
 - **v1.0**
 	- Initial release.
