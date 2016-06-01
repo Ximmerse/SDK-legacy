@@ -50,7 +50,7 @@ This tool enables to obtain detailed info of X-Cobras via X-Hawk. It is also hel
 	1. Turn on X-Cobra by press its power button.
 	2. Put X-Cobra close to X-Hawk. It will be successfully connected once it vibrates.
 4. Run tracking HID demo by following steps:
-	1. Download tracking HID demo from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/Tracking_hid.zip?raw=true) (ZIP file).
+	1. Download tracking HID demo from [here](https://github.com/Ximmerse/SDK/raw/master/Tools/PC/Tracking_hid.zip) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `Tracking_hid -> Tracking_hid.exe` to run. You will see the real-time status of X-Cobra (assume two X-Cobras are connected) that are represented by 3D virtual balls in the program window, with FPS information shown in the left bottom.
 		![](imgs/TestDemo.png)
@@ -77,7 +77,7 @@ This tool enables to obtain detailed info of 1) X-Cobras via X-Hawk, 2) X-Cobras
 The hardware requirement and setup steps are the same as the above tracking HID demo except the last step replaced by the following:
 
 - Run CrossInputManager by following steps
-	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/CrossInputManager.zip?raw=true) (ZIP file).
+	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/raw/master/Tools/PC/CrossInputManager.zip) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `CrossInputManager -> CrossInputManager.exe` to run.
 	4. Click `InputTest (X-Hawk)` button to activate this mode.
@@ -125,7 +125,7 @@ This sample demonstrates how to obtain the detailed X-Cobra's information (inclu
 			![](imgs/InstallBluetoothUSBDriver.png)
 3. <a name="anchor-console-cobra"></a> Connect X-Cobra via X-Console tool. This can be done by:
 	1. Turn on X-Cobra by press its power button.
-	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/PC/X-Console.zip?raw=true) (ZIP file).
+	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/raw/master/Tools/PC/X-Console.zip) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `X-Console -> X-Console.exe` to run.
 		![](imgs/CrossInputManagerGUI_XCobra2.png)
@@ -140,7 +140,7 @@ This sample demonstrates how to obtain the detailed X-Cobra's information (inclu
 	5. Connect right hand X-Cobra in the similar way.
 		![](imgs/CrossInputManagerGUI_XCobra6.png)
 4. Run CrossInputManager by following steps
-	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/PC/CrossInputManager.zip?raw=true) (ZIP file).
+	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/raw/master/Tools/PC/X-Console.zip) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `CrossInputManager -> CrossInputManager.exe` to run.
 	4. Click `InputTest (X-Cobra)` button to activate this mode.
@@ -176,7 +176,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 			![](imgs/InstallBluetoothUSBDriver.png)
 3. <a name="anchor-console-swift"></a> Connect X-Swift via X-Console tool. This can be done by:
 	1. Turn on X-Swift by press its power button.
-	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/PC/X-Console.zip?raw=true) (ZIP file).
+	2. Download X-Console tool from [here](https://github.com/Ximmerse/SDK/raw/master/Tools/PC/X-Console.zip) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `X-Console -> X-Console.exe` to run.
 		![](imgs/CrossInputManagerGUI_XCobra2.png)
@@ -188,7 +188,7 @@ Once done, you will be able to obtain the detailed X-Cobra's information (includ
 		- Select the X-Swift via its device BT address (starting with `00:`) in the dropdown list.
 			![](imgs/CrossInputManagerGUI_XSwift4.png)
 4. Run CrossInputManager by following steps
-	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/PC/CrossInputManager.zip?raw=true) (ZIP file).
+	1. Download CrossInputManager from [here](https://github.com/Ximmerse/SDK/raw/master/Tools/PC/X-Console.zip) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `CrossInputManager -> CrossInputManager.exe` to run.
 	4. Click `InputTest (X-Swift)` button to activate this mode.
@@ -247,7 +247,7 @@ This tool is useful for
 
 			![](imgs/InstallBluetoothUSBDriver.png)
 3. Run IMU calibration tool by following steps:
-	1. Download IMU calibration tool from [here](https://github.com/Ximmerse/SDK/blob/master/Tools/PC/IMU_cal_tool_V1.zip?raw=true) (ZIP file).
+	1. Download IMU calibration tool from [here](https://github.com/Ximmerse/SDK/raw/master/Tools/PC/IMU_cal_tool_V1.zip) (ZIP file).
 	2. Unzip the file to your PC.
 	3. Double click `IMU_cal_tool_V1 -> IMU_Cal_Tool_V1.exe` to run. You will see the calibration program like this:
 		![](imgs/IMUCalibrationWindow.png)
